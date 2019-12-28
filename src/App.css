@@ -1,38 +1,106 @@
 .App {
-  text-align: center;
+  height: 800px;
+  width: 600px;
+  background-color: gray;
+  border-radius: 25px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Display {
+  height: 200px;
+  background-color: black;
+  border-radius: 25px 25px 0px 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Brand {
+  height: 50px;
+  background-color: silver;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Button-pad {
+  height: 550px;
+  background-color: blue;
+  border-radius: 0px 0px 25px 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:  "pi plus seven eight nine"
+                        "pi minus four five six"
+                        "clear times one two three"
+                        "clear divide equil zero point"
 }
 
-.App-link {
-  color: #61dafb;
+.pi {
+  grid-area: pi;
+  background-color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.plus {
+  grid-area: plus;
+  background-color: white;
+}
+.minus {
+  grid-area: minus;
+  background-color: white;
+}
+.divide {
+  grid-area: divide;
+  background-color: white;
+}
+.times {
+  grid-area: times;
+  background-color: white;
+}
+.clear {
+  grid-area: clear;
+  background-color: white;
+}
+.equil {
+  grid-area: equil;
+  background-color: white;
+}
+.point {
+  grid-area: point;
+  background-color: white;
+}
+
+.one {
+  grid-area: one;
+  background-color: white;
+}
+.two {
+  grid-area: two;
+  background-color: white;
+}
+.three {
+  grid-area: three;
+  background-color: white;
+}
+.four {
+  grid-area: four;
+  background-color: white;
+}
+.five {
+  grid-area: five;
+  background-color: white;
+}
+.six {
+  grid-area: six;
+  background-color: white;
+}
+.seven {
+  grid-area: seven;
+  background-color: white;
+}
+.eight {
+  grid-area: eight;
+  background-color: white;
+}
+
+.nine {
+  grid-area: nine;
+  background-color: white;
+}
+.zero {
+  grid-area: zero;
+  background-color: white;
 }
